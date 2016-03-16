@@ -1,8 +1,13 @@
 function myFunction() {
+
 // this first command gets the active spreadsheet
+
   var ss = SpreadsheetApp.getActiveSpreadsheet();
+
   //this gets the sheets by name which only applys to what is being used on the sheet I have
+
   //Second note A loop and an array did not work for this sheet because it grabbed incorrect data due to being run through AutoCrat
+
   var sheet1 = ss.getSheetByName("Introduction&Instructions");
   var sheet2 = ss.getSheetByName("Simple_Math");
   var sheet3 = ss.getSheetByName("Calculating Rubrics");  
@@ -20,7 +25,9 @@ function myFunction() {
   var sheet16 = ss.getSheetByName("Data Validation");
   var sheet17 = ss.getSheetByName("Protect Range");
   
+
   //getting the cells where the info needing to be run in the ifs at the bottom
+
   var cell1 = sheet1.getRange(8,2);
   var cell2 = sheet1.getRange(9,2);
   var cell3 = sheet1.getRange(10,2);
@@ -38,9 +45,11 @@ function myFunction() {
   var cell15 = sheet1.getRange(22,2);
   
   //each one tests what was answered... this is the remiainder of the code all copied from the first
+
   //Reminder that AutoCrat adds info that is not able to be sorted out that is not viewed when on the sheet, but is on the "hard data"
   
 //simple math
+
   if (cell1.getValue() == "No") {
     sheet2.hideSheet();
   }
@@ -79,7 +88,8 @@ function myFunction() {
   }
   
   //Filter data
-    if (cell5.getValue() == "No") {
+
+  if (cell5.getValue() == "No") {
     sheet6.hideSheet();
   }
 
@@ -91,7 +101,8 @@ function myFunction() {
   }
   
   //freeze rows and data
-    if (cell3.getValue() == "No") {
+
+  if (cell3.getValue() == "No") {
     sheet7.hideSheet();
   }
 
@@ -101,8 +112,10 @@ function myFunction() {
   if (cell3.getValue() == "Maybe") {
     sheet7.showSheet();
   }
+
   //sort data
-    if (cell4.getValue() == "No") {
+
+  if (cell4.getValue() == "No") {
     sheet8.hideSheet();
   }
 
@@ -112,8 +125,10 @@ function myFunction() {
   if (cell4.getValue() == "Maybe") {
     sheet8.showSheet();
   }
+
   //Hide Rows and data
-    if (cell7.getValue() == "No") {
+
+  if (cell7.getValue() == "No") {
     sheet9.hideSheet();
   }
 
@@ -123,8 +138,10 @@ function myFunction() {
   if (cell7.getValue() == "Maybe") {
     sheet9.showSheet();
   }
+
   //concatenate
-    if (cell8.getValue() == "No") {
+
+  if (cell8.getValue() == "No") {
     sheet10.hideSheet();
   }
 
@@ -136,7 +153,8 @@ function myFunction() {
   }
   
   //split
-    if (cell9.getValue() == "No") {
+
+  if (cell9.getValue() == "No") {
     sheet11.hideSheet();
   }
 
@@ -146,8 +164,10 @@ function myFunction() {
   if (cell9.getValue() == "Maybe") {
     sheet11.showSheet();
   }
+
   //countif
-    if (cell10.getValue() == "No") {
+
+  if (cell10.getValue() == "No") {
       sheet12.hideSheet();
   }
 
@@ -157,8 +177,10 @@ function myFunction() {
   if (cell10.getValue() == "Maybe") {
     sheet12.showSheet();
   }
+
   //explote data
-    if (cell11.getValue() == "No") {
+
+  if (cell11.getValue() == "No") {
     sheet13.hideSheet();
   }
 
@@ -168,8 +190,10 @@ function myFunction() {
   if (cell11.getValue() == "Maybe") {
     sheet13.showSheet();
   }
+
   //addons
-    if (cell12.getValue() == "No") {
+
+  if (cell12.getValue() == "No") {
     sheet14.hideSheet();
   }
 
@@ -179,8 +203,10 @@ function myFunction() {
   if (cell12.getValue() == "Maybe") {
     sheet14.showSheet();
   }
+  
   //conditional formatiing
-    if (cell13.getValue() == "No") {
+  
+  if (cell13.getValue() == "No") {
     sheet15.hideSheet();
   }
 
@@ -190,8 +216,10 @@ function myFunction() {
   if (cell13.getValue() == "Maybe") {
     sheet15.showSheet();
   }
+  
   //data validation
-    if (cell14.getValue() == "No") {
+  
+  if (cell14.getValue() == "No") {
     sheet16.hideSheet();
   }
 
@@ -201,8 +229,10 @@ function myFunction() {
   if (cell14.getValue() == "Maybe") {
     sheet16.showSheet();
   }
+  
   //protect range
-    if (cell15.getValue() == "No") {
+ 
+  if (cell15.getValue() == "No") {
     sheet17.hideSheet();
   }
 
