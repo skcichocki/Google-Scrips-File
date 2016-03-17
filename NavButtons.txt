@@ -1,9 +1,16 @@
+//sagan
 function onOpen() {
   var ui = SpreadsheetApp.getUi();
   // Or DocumentApp or FormApp.
   ui.createMenu('Admin Tools')
+      
+      //Change 'get your lesson' to what you want the manu button to say, as well as 'hideSheets' to call the method in another script
       .addItem('Get Your Lesson', 'hideSheets')
+      
+      //adds seperator to the manu item to seperate buttons from the standard help button
       .addSeparator()
+      
+      //adds the admin tools button to the user interface of the google app
       .addToUi();
       
 }
