@@ -1,0 +1,40 @@
+// WARNING NOT WORKING
+
+function myFunction() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+   
+  
+  
+  var sheet1 = ss.getSheetByName("Introduction&Instructions");
+  
+  var sheetName = ss.getSheets["Simple_Math"];
+  
+  
+  for (x = 0; x < 1; x++){
+   var sheet = sheetName[x];
+    
+    for (y = 8; y < 9; y++){
+     var yesOrNo = sheet1.getRange(y, 2);
+     
+      if (yesOrNo.getValue() == "No") {
+        sheet.hideSheet();
+  }
+
+      if (yesOrNo.getValue() == "Yes") {
+        sheet.showSheet();
+  }
+      if (yesOrNo.getValue() == "Maybe") {
+        sheet.showSheet();
+  }
+    }
+    
+    
+  }
+                            
+
+    
+    
+    
+    
+    
+    }
