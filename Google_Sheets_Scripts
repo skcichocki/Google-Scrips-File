@@ -1,4 +1,12 @@
 //Written By Sagan Cichocki
+
+/*
+In order to serve the function i wanted i had to make everything writen out, this meant that
+I had to keep everything seperated or AutoCrat got mad and does not work. 
+What this does is takes the sheets by their names, stores them, calls up the rows where the answers 
+are at to see if they need to be visible, if no then the sheets are hidden, if yes they are shown.
+By default they are not shown, but will call the hide method to keep it safe.
+*/
 function hideSheets() {
 
   var ss = SpreadsheetApp.getActiveSpreadsheet();
