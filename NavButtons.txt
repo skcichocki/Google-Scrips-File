@@ -1,0 +1,9 @@
+function onOpen() {
+  var ui = SpreadsheetApp.getUi();
+  // Or DocumentApp or FormApp.
+  ui.createMenu('Admin Tools')
+      .addItem('Get Your Lesson', 'hideSheets')
+      .addSeparator()
+      .addToUi();
+      
+}
